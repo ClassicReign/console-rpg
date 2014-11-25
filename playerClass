@@ -1,0 +1,20 @@
+class Player
+{
+  string name;
+  short health, strength, defence, luck;
+  
+  Player(const string& name = "", short health = 100, short strength = 0, short defence = 0, short luck = 0)
+  {
+    this -> name = name;
+    this -> health = health;
+    this -> strength = strength;
+    this -> defence = defence;
+    this -> luck = luck;
+  }
+  
+  void getName() const {return name;}
+  void getHealth() const {return health;}
+  void getStrength() const {return strength;}
+  void getDefence() const {return defence;}
+  void getLuck() const {return luck;}
+}
